@@ -1,6 +1,6 @@
 aoclib = require("modules.aoclib")
 
-print("Hello World")
+-- print("Hello World")
 
 function main()
     local input = aoclib.readFile("inputs/day1.txt")

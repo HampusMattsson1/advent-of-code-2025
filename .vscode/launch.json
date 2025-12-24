@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "luahelper",
+            "request": "launch",
+            "name": "LuaHelper: Debug Current File",
+            "program": "${file}",
+            "cwd": "${workspaceFolder}",
+            "luaExe": "lua", 
+            "args": []
+        }
+    ]
+}
