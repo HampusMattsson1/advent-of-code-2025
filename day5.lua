@@ -50,4 +50,32 @@ function main()
     print("Part 1 result: " .. part1Result)
 end
 
+function main2()
+    local input = aoclib.readFile("inputs/day5.txt")
+
+    local part2Result = 0
+
+    -- Merge overlapping
+
+    local s, e = input[1]:match("([^-]+)-([^-]+)")
+    local rangeStart = math.tointeger(s)
+    local rangeEnd = math.tointeger(e)
+
+    -- for i, line in ipairs(input) do
+    for i = 2, #input do
+        local line = input[i]
+        if line == "" then break end
+
+        local lineRangeStart, lineRangeEnd = line:match("([^-]+)-([^-]+)")
+
+        -- Merging overlap outcomes
+        
+
+    end
+
+
+    print("Part 2 result: " .. part2Result)
+end
+
 main()
+main2()
